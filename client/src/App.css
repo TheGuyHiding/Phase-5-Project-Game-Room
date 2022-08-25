@@ -1,38 +1,67 @@
 .App {
+  font-family: rockwell;
   text-align: center;
+  background-color: yellowgreen;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.NavBar {
+  /* border-bottom: 1px groove rgb(221, 221, 221); */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style-type: none;
+  margin: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:link {
+  text-decoration: none;
+  color: blue;
+}
+a {
+  display: flex;
+  align-items: center;
+}
+
+.Fluff {
+  padding-left: 5px;
+}
+
+.game-block {
+  margin: 0;
+  padding: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid #ddd;
+}
+.piece-i {
+  background-color: #ec858b;
+}
+.piece-j {
+  background-color: #f1b598;
+}
+.piece-l {
+  background-color: #f8efae;
+}
+.piece-o {
+  background-color: #b5a677;
+}
+.piece-s {
+  background-color: #816e56;
+}
+.piece-t {
+  background-color: #b77c72;
+}
+.piece-z {
+  background-color: #e3be58;
+}
+.piece-preview {
+  background-color: #eee;
 }
