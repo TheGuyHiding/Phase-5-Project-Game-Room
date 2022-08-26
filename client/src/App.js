@@ -4,18 +4,28 @@ import "./App.css";
 import NavBar from "./Components/Navbar";
 import Login from "./Components/Login";
 import SnakeGame from "./Components/SnakeGame";
+import TetrisGame from "./Components/TetrisGame";
 
 function App() {
-  const [page, setPage] = useState("/")
-  
+  const [page, setPage] = useState("/");
+
   return (
     <BrowserRouter>
       <div className="App">
         <NavBar onChangePAge={setPage} />
-        <Route path="/games" />
-        <Route path="/leaderbaords" />
-        <Route exact path="/login" element = {<Login />}/>
-        <SnakeGame />
+        <Switch>
+          <Route path="/games" />
+          <Route path="/leaderbaords" />
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/snakegame">
+            <SnakeGame />
+          </Route>
+          <Route path="/tetrisgame">
+            <TetrisGame />
+          </Route>
+        </Switch>
       </div>
     </BrowserRouter>
   );

@@ -1,0 +1,38 @@
+.game-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.game-block {
+    margin: 0;
+    padding: 0;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid #ddd;
+    align-content: center;
+  }
+  .piece-i {
+    background-color: blue;
+  }
+  .piece-j {
+    background-color: yellow;
+  }
+  .piece-l {
+    background-color: purple;
+  }
+  .piece-o {
+    background-color: cyan;
+  }
+  .piece-s {
+    background-color: red;
+  }
+  .piece-t {
+    background-color: orange;
+  }
+  .piece-z {
+    background-color: green;
+  }
+  .piece-preview {
+    background-color: #eee;
+  }
